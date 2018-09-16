@@ -2,8 +2,6 @@ function produceDrivingRange (range) {
   return function (start, end) {
     let street1 = parseInt(start);
     let street2 = parseInt(end);
-
-
     let distance = Math.abs(street1 - street2)
 
     if (distance <= range) {
@@ -31,5 +29,3 @@ function createDriver() {
     }
   }
 }
-
- 
