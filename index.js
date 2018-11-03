@@ -8,11 +8,11 @@ function produceDrivingRange(blockRange) {
       let range = blockRange - distance
       return `within range by ${range)`
     } else {
-      let range = distance - blockRange 
+      let range = distance - blockRange
       return `${range} blocks out of range`
     }
   }
-}
+
 
 
 function produceTipCalculator(percent) {            //argument of percent for tip
