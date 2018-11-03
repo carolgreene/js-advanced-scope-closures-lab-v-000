@@ -1,4 +1,18 @@
+function produceDrivingRange(blockRange) {
+  return function(start, end) {
+    let block1 = parseInt(start)
+    let block2 = parseInt(end)
+    let distance = Math.abs(block2 - block1)
 
+    if (blockRange <= distance) {
+      let range = blockRange - distance
+      return `within range by ${range)`
+    } else {
+      let range = distance - blockRange 
+      return `${range} blocks out of range`
+    }
+  }
+}
 
 
 function produceTipCalculator(percent) {            //argument of percent for tip
